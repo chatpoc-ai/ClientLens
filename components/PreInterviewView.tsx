@@ -53,7 +53,7 @@ const PreInterviewView: React.FC = () => {
                   <input 
                     type="text" 
                     required
-                    className="pl-9 w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                    className="pl-9 w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 placeholder-slate-400"
                     placeholder="e.g. Jane Doe"
                     value={formData.customerName}
                     onChange={e => setFormData({...formData, customerName: e.target.value})}
@@ -67,7 +67,7 @@ const PreInterviewView: React.FC = () => {
                   <input 
                     type="text" 
                     required
-                    className="pl-9 w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                    className="pl-9 w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 placeholder-slate-400"
                     placeholder="e.g. Acme Corp"
                     value={formData.companyName}
                     onChange={e => setFormData({...formData, companyName: e.target.value})}
@@ -81,7 +81,7 @@ const PreInterviewView: React.FC = () => {
               <div className="relative">
                 <FileText className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
                 <textarea 
-                  className="pl-9 w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[120px]"
+                  className="pl-9 w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[120px] placeholder-slate-400"
                   placeholder="Paste history, previous objections, sales stage..."
                   value={formData.internalNotes}
                   onChange={e => setFormData({...formData, internalNotes: e.target.value})}
@@ -94,7 +94,7 @@ const PreInterviewView: React.FC = () => {
               <div className="relative">
                 <LinkIcon className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
                 <textarea 
-                  className="pl-9 w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[120px]"
+                  className="pl-9 w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[120px] placeholder-slate-400"
                   placeholder="Paste LinkedIn bio, recent news articles, company website info..."
                   value={formData.externalInfo}
                   onChange={e => setFormData({...formData, externalInfo: e.target.value})}

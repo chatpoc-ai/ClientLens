@@ -65,7 +65,7 @@ const PostInterviewView: React.FC<Props> = ({ customers, onUpdateCustomer }) => 
           <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
             <label className="block text-sm font-medium text-slate-700 mb-2">Select Customer</label>
             <select 
-              className="w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 mb-4"
+              className="w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 mb-4"
               value={selectedCustomerId}
               onChange={(e) => {
                 setSelectedCustomerId(e.target.value);
@@ -82,7 +82,7 @@ const PostInterviewView: React.FC<Props> = ({ customers, onUpdateCustomer }) => 
             <div className="relative">
               <Mic className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
               <textarea 
-                className="pl-9 w-full rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[300px] font-mono text-sm leading-relaxed"
+                className="pl-9 w-full bg-white text-slate-900 rounded-md border border-slate-300 py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 min-h-[300px] font-mono leading-relaxed placeholder-slate-400"
                 placeholder="Paste raw text, transcript, or bullet points from the meeting here..."
                 value={notes}
                 onChange={e => setNotes(e.target.value)}
