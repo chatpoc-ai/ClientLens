@@ -13,10 +13,26 @@ const INITIAL_CUSTOMERS: CustomerPersona[] = [
     company: 'TechFlow Solutions',
     role: 'CTO',
     industry: 'SaaS',
-    keyPainPoints: ['Legacy system latency', 'High cloud costs'],
-    tags: ['Tech-savvy', 'Budget-conscious'],
+    keyPainPoints: ['Legacy system latency', 'High cloud costs', 'Slow deployment cycles'],
+    budget: '$150k/annually',
+    decisionMakerStatus: 'Primary',
+    tags: ['Tech-savvy', 'Budget-conscious', 'Early Adopter'],
     status: 'Active',
-    lastInterviewDate: '2023-10-15'
+    lastInterviewDate: '2023-10-15',
+    history: [
+      {
+        id: 'h1',
+        date: '2023-10-15',
+        title: 'Q3 Business Review',
+        summary: 'Discussed Q3 performance. Alice is happy with stability but concerned about rising AWS costs. We need to propose our optimization module next quarter.'
+      },
+      {
+        id: 'h2',
+        date: '2023-08-01',
+        title: 'Initial Implementation Check-in',
+        summary: 'Smooth rollout. Team is adjusting to the new dashboard. Requested a training session for the DevOps team.'
+      }
+    ]
   },
   {
     id: '2',
@@ -24,9 +40,20 @@ const INITIAL_CUSTOMERS: CustomerPersona[] = [
     company: 'GreenLeaf Logistics',
     role: 'VP Operations',
     industry: 'Logistics',
-    keyPainPoints: ['Supply chain visibility'],
-    tags: ['Urgent', 'Enterprise'],
+    keyPainPoints: ['Supply chain visibility', 'Driver retention', 'Fuel cost optimization'],
+    budget: '$500k Project Cap',
+    decisionMakerStatus: 'Influencer',
+    tags: ['Urgent', 'Enterprise', 'Q4 Target'],
     status: 'Lead',
+    lastInterviewDate: '2023-11-02',
+    history: [
+      {
+        id: 'h3',
+        date: '2023-11-02',
+        title: 'Discovery Call',
+        summary: 'Deep dive into logistics challenges. Marcus mentioned losing 15% of drivers due to scheduling inefficiencies. He is very interested in the auto-scheduling feature.'
+      }
+    ]
   },
   {
     id: '3',
@@ -34,9 +61,74 @@ const INITIAL_CUSTOMERS: CustomerPersona[] = [
     company: 'EduCreate',
     role: 'Director of Product',
     industry: 'EdTech',
-    keyPainPoints: [],
-    tags: ['New Prospect'],
+    keyPainPoints: ['Low student engagement', 'Mobile app crashes', 'Content delivery lag'],
+    budget: 'TBD',
+    decisionMakerStatus: 'Evaluator',
+    tags: ['New Prospect', 'Education', 'Mobile First'],
     status: 'Prospect',
+    lastInterviewDate: '2023-09-20',
+    history: [
+      {
+        id: 'h4',
+        date: '2023-09-20',
+        title: 'Introductory Call',
+        summary: 'Sarah is evaluating vendors to replace their current legacy LMS. Key criteria: Mobile performance and gamification features.'
+      }
+    ]
+  },
+  {
+    id: '4',
+    name: 'David Kovac',
+    company: 'FinStream',
+    role: 'Head of Security',
+    industry: 'FinTech',
+    keyPainPoints: ['Compliance reporting', 'Data sovereignty', 'Audit trails'],
+    budget: '$2M+',
+    decisionMakerStatus: 'Gatekeeper',
+    tags: ['High Risk', 'Compliance', 'Slow Mover'],
+    status: 'Churned',
+    lastInterviewDate: '2023-05-10',
+    history: [
+      {
+        id: 'h5',
+        date: '2023-05-10',
+        title: 'Exit Interview',
+        summary: 'Client decided to build in-house due to strict new data sovereignty regulations in the EU that we could not meet in time.'
+      },
+      {
+        id: 'h6',
+        date: '2023-01-15',
+        title: 'Security Audit Review',
+        summary: 'Tense meeting regarding SOC2 report delays. David needs assurance on our pen-testing schedule.'
+      }
+    ]
+  },
+  {
+    id: '5',
+    name: 'Elena Rodriguez',
+    company: 'Urban Architectures',
+    role: 'CEO',
+    industry: 'Real Estate',
+    keyPainPoints: ['Client communication silos', 'Project timeline drift', 'Vendor management'],
+    budget: '$50k/mo',
+    decisionMakerStatus: 'Primary',
+    tags: ['VIP', 'High Growth', 'Referral'],
+    status: 'Active',
+    lastInterviewDate: '2023-11-14',
+    history: [
+      {
+        id: 'h7',
+        date: '2023-11-14',
+        title: 'Partnership Expansion',
+        summary: 'Elena wants to roll out our tool to their 3 new satellite offices. Agreed on a 20% bulk discount for the new seats.'
+      },
+      {
+        id: 'h8',
+        date: '2023-06-22',
+        title: 'Mid-Year Sync',
+        summary: 'General health check. No major issues. She loves the mobile app for site visits.'
+      }
+    ]
   }
 ];
 

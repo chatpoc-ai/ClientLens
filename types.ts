@@ -5,6 +5,13 @@ export enum AppView {
   CUSTOMER_DB = 'CUSTOMER_DB'
 }
 
+export interface InterviewRecord {
+  id: string;
+  date: string;
+  title: string;
+  summary: string;
+}
+
 export interface CustomerPersona {
   id: string;
   name: string;
@@ -17,6 +24,7 @@ export interface CustomerPersona {
   lastInterviewDate?: string;
   tags: string[];
   status: 'Lead' | 'Active' | 'Churned' | 'Prospect';
+  history: InterviewRecord[];
 }
 
 export interface PreInterviewData {
